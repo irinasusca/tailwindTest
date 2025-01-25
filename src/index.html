@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="./output.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+        <title>My Website</title>
+    </head>
+
+    <body class="bg-red-400 m-0 font-katerina">
+        <main class="h-screen ">
+            <div class="w-full h-20 bg-dark-grey fixed flex flex-row items-center justify-center gap-2 z-50 xl:h-[10vh] xl:gap-10">
+                <span class="text-dark-white text-[5vw] xl:text-[4vh] hover:text-yellow-500 transition-colors duration-300 ease-in-out "  onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Home</span>
+                <span class="text-dark-white text-[5vw] xl:text-[4vh] hover:text-yellow-500 transition-colors duration-300 ease-in-out" onclick="window.scrollTo({top: window.innerHeight, behavior: 'smooth'})" >Contact</span>
+                <img src="../images/bizzart-reversed.png" class="size-20 xl:size-[10vh]"/>
+                <span class="text-dark-white text-[5vw] xl:text-[4vh] hover:text-yellow-500 transition-colors duration-300 ease-in-out"  onclick="window.scrollTo({top: window.innerHeight * 1.7, behavior: 'smooth'})" >Artists</span>
+                <span class="text-dark-white text-[5vw] xl:text-[4vh] hover:text-yellow-500 transition-colors duration-300 ease-in-out" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})" >Reviews</span>
+
+            </div>
+
+            <div class="w-full bg-dark-grey h-full ">
+                <div class="h-[100vh] xl:h-[80vh] w-full flex flex-col items-center justify-center xl:justify-end gap-10 overflow-hidden" id="parallax-container">
+
+                    <div class=" p-4 flex flex-col items-center justify-center gap-5 absolute z-20 xl:gap-[4vw]" >
+                        <span class="text-dark-white  font-semibold text-4xl xl:text-[7vw] drop-shadow-xl">Bizzart Tattoo Studio</span>
+                        <span class="text-dark-white   text-xl text-center xl:text-[2vw] xl:w-1/2 xl:leading-snug drop-shadow-lg">Modern tattoo studio located in the beautiful village of Ubley, less than 10 miles from Bristol. We have a variety of skilled artists and a welcoming environment.</span>
+                        <span onclick="window.scrollBy({top: window.innerHeight, behavior: 'smooth'})" class=" bg-yellow-500 text-3xl  font-semibold rounded p-3 flex flex-row justify-center items-center gap-1 mt-10 xl:text-[2vw] xl:p-5  hover:bg-opacity-20 border-yellow-500 border-4 hover:text-dark-white group transition-colors duration-300 ease-in-out drop-shadow-xl" >Explore <img src="../images/down-arrow.png" class="size-8 group-hover:invert transition-all duration-300 ease-in-out"/></span>
+
+                    </div>
+
+                    <div class="w-full  bg-cover absolute bottom-0 translate-y-0 parallax-child z-10">
+                        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 200" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(27, 27, 27, 1) " offset="0%"></stop><stop stop-color="rgba(23, 23, 23, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L34.3,13.3C68.6,27,137,53,206,80C274.3,107,343,133,411,126.7C480,120,549,80,617,66.7C685.7,53,754,67,823,80C891.4,93,960,107,1029,96.7C1097.1,87,1166,53,1234,56.7C1302.9,60,1371,100,1440,106.7C1508.6,113,1577,87,1646,70C1714.3,53,1783,47,1851,56.7C1920,67,1989,93,2057,86.7C2125.7,80,2194,40,2263,46.7C2331.4,53,2400,107,2469,116.7C2537.1,127,2606,93,2674,83.3C2742.9,73,2811,87,2880,80C2948.6,73,3017,47,3086,36.7C3154.3,27,3223,33,3291,56.7C3360,80,3429,120,3497,116.7C3565.7,113,3634,67,3703,46.7C3771.4,27,3840,33,3909,53.3C3977.1,73,4046,107,4114,113.3C4182.9,120,4251,100,4320,90C4388.6,80,4457,80,4526,86.7C4594.3,93,4663,107,4731,116.7C4800,127,4869,133,4903,136.7L4937.1,140L4937.1,200L4902.9,200C4868.6,200,4800,200,4731,200C4662.9,200,4594,200,4526,200C4457.1,200,4389,200,4320,200C4251.4,200,4183,200,4114,200C4045.7,200,3977,200,3909,200C3840,200,3771,200,3703,200C3634.3,200,3566,200,3497,200C3428.6,200,3360,200,3291,200C3222.9,200,3154,200,3086,200C3017.1,200,2949,200,2880,200C2811.4,200,2743,200,2674,200C2605.7,200,2537,200,2469,200C2400,200,2331,200,2263,200C2194.3,200,2126,200,2057,200C1988.6,200,1920,200,1851,200C1782.9,200,1714,200,1646,200C1577.1,200,1509,200,1440,200C1371.4,200,1303,200,1234,200C1165.7,200,1097,200,1029,200C960,200,891,200,823,200C754.3,200,686,200,617,200C548.6,200,480,200,411,200C342.9,200,274,200,206,200C137.1,200,69,200,34,200L0,200Z"></path></svg>
+                    </div>
+
+                    <div class="w-full h-[100vh] bg-cover absolute top-0 translate-y-0 parallax-child filter brightness-50" style="background-image: url(../images/tattooshop.jpg);"></div>
+
+                    
+
+
+                </div>
+                
+
+                
+                
+            </div>
+
+            <div class="w-full bg-dark-grey">
+                
+            </div>
+
+            <div class=" bg-dark-grey">
+                <div class="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
+                    <div class="h-[50vh] xl:h-[70vh] bg-dark-white flex flex-col justify-center items-end p-10 xl:p-[6vh]  gap-2 text-right ">
+                        <span class="text-[2.5vh] xl:text-[4vh] "> Open 10-6  mon-sat </span>
+                        <span class="text-[2.5vh] xl:text-[4vh]"> Ferdinand St. 13, Cluj-Napoca</span>
+                        <span class="text-[2.5vh] xl:text-[4vh]"> 0117 403 3966 </span>
+                        <div class="flex flex-row gap-3"> <img class="size-10 invert  xl:size-[8vh]" src="../images/mw-facebook.svg"/> <img class="size-10 invert xl:size-[8vh]" src="../images/mw-instagram.svg"/> </div>
+                        <span class="text-[2.5vh] xl:text-[3vh] ">examplebusiness@gmail.com</span>
+
+                    </div>
+                    <div class="h-[50vh] xl:h-[70vh] object-cover bg-cover" style="background-image:url(../images/location.jpg)"></div>
+                </div>
+            </div>
+
+            <!--artistii-->
+            <div class="bg-dark-grey  w-full">
+                <div class="text-4xl xl:text-[6vh] p-[10vw] xl:p-[5vw] text-center   text-dark-white">Our Artists</div>
+                <div class=" grid grid-cols-[repeat(auto-fit,minmax(250px,0.75fr))] gap-10 xl:gap-20 justify-center ml-[5vw]  mr-[5vw]  pb-[5vw]">
+                    <div class="relative m-2 xl:m-5 rounded-xl group overflow-hidden drop-shadow-xl ">
+                        <img class="object-cover rounded-xl group-hover:scale-110 transition-transform duration-300 ease-in-out transform" src="../images/Tattoo-Artist-Jae-Park-@park_tattooer-12.png"/>
+                        <span class="z-20 rounded-b-xl absolute bottom-0 bg-black bg-opacity-50 text-dark-white w-full p-4 text-2xl xl:text-[3vh] xl:p-[2vh] transition-colors duration-300 ease-in-out  group-hover:text-yellow-500"> Nume Artist</span>
+                    </div>
+
+                    <div class="relative m-2 xl:m-5 rounded-xl group overflow-hidden drop-shadow-xl ">
+                        <img class="object-cover rounded-xl group-hover:scale-110 transition-transform duration-300 ease-in-out transform" src="../images/Tattoo-Artist-Jae-Park-@park_tattooer-12.png"/>
+                        <span class="z-20 rounded-b-xl absolute bottom-0 bg-black bg-opacity-50 text-dark-white w-full p-4 text-2xl xl:text-[3vh] xl:p-[2vh] transition-colors duration-300 ease-in-out  group-hover:text-yellow-500"> Nume Artist</span>
+                    </div>
+
+                    <div class="relative m-2 xl:m-5 rounded-xl group overflow-hidden drop-shadow-xl ">
+                        <img class="object-cover rounded-xl group-hover:scale-110 transition-transform duration-300 ease-in-out transform" src="../images/Tattoo-Artist-Jae-Park-@park_tattooer-12.png"/>
+                        <span class="z-20 rounded-b-xl absolute bottom-0 bg-black bg-opacity-50 text-dark-white w-full p-4 text-2xl xl:text-[3vh] xl:p-[2vh] transition-colors duration-300 ease-in-out  group-hover:text-yellow-500"> Nume Artist</span>
+                    </div>
+
+                    <div class="relative m-2 xl:m-5 rounded-xl group overflow-hidden drop-shadow-xl ">
+                        <img class="object-cover rounded-xl group-hover:scale-110 transition-transform duration-300 ease-in-out transform" src="../images/Tattoo-Artist-Jae-Park-@park_tattooer-12.png"/>
+                        <span class="z-20 rounded-b-xl absolute bottom-0 bg-black bg-opacity-50 text-dark-white w-full p-4 text-2xl xl:text-[3vh] xl:p-[2vh] transition-colors duration-300 ease-in-out  group-hover:text-yellow-500"> Nume Artist</span>
+                    </div>
+
+                    
+    
+                    
+                </div>
+            </div>
+
+            <div class="bg-dark-white w-full relative flex justify-center items-center flex-col pt-[5vh] pb-[5vh]">
+                <div class="text-4xl xl:text-[6vh] p-[10vw] xl:p-[5vw] text-center xl:text-left  text-dark-grey">Our Customers</div>
+                <div class="w-11/12 xl:w-1/2 ">
+                    <div class="swiper default-carousel swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="bg-dark-grey rounded-2xl h-[50vh] flex justify-around items-left p-10 lg:p-24 flex-col">
+                                    <span class="lg:text-3xl text-lg text-left text-[#aaafb6] italic ">Great place if you want to get well done, 
+                                        great looking tattoo. Between them, Karina, Silviu & Attila can cover a lot styles and
+                                         will be able to get you the design you want. They are really passionate about what they 
+                                         do and put a lot of attention and care into each piece. </span>
+                                  
+                                    <div class="flex flex-row flex-start gap-5 items-center">
+                                        <img src="../images/unnamed.png" class="lg:size-20 size-12 rounded-full"/>
+                                        <span class="text-dark-white lg:text-3xl text-lg font-semibold">Florin Alexandru Ungur</span>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="bg-dark-grey rounded-2xl h-[50vh] flex justify-around items-left p-10 lg:p-24 flex-col">
+                                    <span class="lg:text-3xl text-lg text-left text-[#aaafb6] italic ">Great place if you want to get well done, 
+                                        great looking tattoo. Between them, Karina, Silviu & Attila can cover a lot styles and
+                                         will be able to get you the design you want. They are really passionate about what they 
+                                         do and put a lot of attention and care into each piece. </span>
+                                  
+                                    <div class="flex flex-row flex-start gap-5 items-center">
+                                        <img src="../images/unnamed.png" class="lg:size-20 size-12 rounded-full"/>
+                                        <span class="text-dark-white lg:text-3xl text-lg font-semibold">Florin Alexandru Ungur</span>
+                                    </div>
+                                  </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="bg-dark-grey rounded-2xl h-[50vh] flex justify-around items-left p-10 lg:p-24 flex-col">
+                                    <span class="lg:text-3xl text-lg text-left text-[#aaafb6] italic ">Great place if you want to get well done, 
+                                        great looking tattoo. Between them, Karina, Silviu & Attila can cover a lot styles and
+                                         will be able to get you the design you want. They are really passionate about what they 
+                                         do and put a lot of attention and care into each piece. </span>
+                                  
+                                    <div class="flex flex-row flex-start gap-5 items-center">
+                                        <img src="../images/unnamed.png" class="lg:size-20 size-12 rounded-full"/>
+                                        <span class="text-dark-white lg:text-3xl text-lg font-semibold">Florin Alexandru Ungur</span>
+                                    </div>
+                                  </div>
+                            </div>
+
+                        </div>
+                    
+                        <div class="flex items-center gap-8 xl:justify-start justify-center">
+                        <button id="slider-button-left" class="swiper-button-prev group !p-2 flex  duration-500 rounded-full !top-2/4 !-translate-y-8  !right-5" data-carousel-prev>
+                            
+                        </button>
+                        <button id="slider-button-right" class="swiper-button-next group !p-2 flex  duration-500 rounded-full !top-2/4 !-translate-y-8  !right-5" data-carousel-next>
+                        
+                        </button>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        </div>
+                </div>
+                    
+            
+            
+            </div>
+
+            <div class="bg-dark-grey h-[10vh] flex justify-center items-center flex-col p-20">
+                <img src="../images/bizzart-reversed.png" class="  size-[8vh]"/>
+                <span class="text-dark-white flex justify-center items-center text-center">Copyright © 2023 The Saw Mill Tattoo Studio. All rights reserved.</span>
+            </div>
+            
+            
+
+           
+            
+            
+        </main>
+
+        <style>
+            .swiper-wrapper {
+                width: 100%;
+        
+                height: max-content !important;
+                padding-bottom: 64px !important;
+                -webkit-transition-timing-function: linear !important;
+                transition-timing-function: linear !important;
+                position: relative;
+            }
+            
+            .swiper-container button {
+                color: #eab308 !important;
+            }
+            
+            .swiper-pagination-bullet {
+                background: #eab308;
+            }
+            
+        </style>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            window.addEventListener('scroll', () => {
+                let parent= document.getElementById('parallax-container');
+                let children = parent.getElementsByTagName('div');
+                for(let i=0; i<children.length; i++)
+                {
+                    children[i].style.transform = 'translateY(-' + (window.pageYOffset * i/children.length) + 'px)';
+                }
+            }
+        
+        , false)
+        
+                
+        var swiper = new Swiper(".default-carousel", {
+        loop: true,
+        pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+        });
+
+
+        </script>
+    </body>
+
+</html>
